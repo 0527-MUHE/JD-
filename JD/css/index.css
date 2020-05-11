@@ -1,0 +1,498 @@
+/* 中间第一部分：轮播图区域  start */
+.fs {
+  margin-top: 15px;
+  height: 470px;
+}
+.fs_col1 {
+  width: 190px;
+  height: 458px;
+  padding-top: 12px;
+  background-color: #fff;
+  position: relative;
+}
+.fs_col1 li {
+  width: 170px;
+  padding-left: 20px;
+  height: 25px;
+}
+.fs_col1 li:hover {
+  background-color: #d9d9d9;
+}
+.fs_col1 a {
+  color: #333;
+  font-size: 14px;
+}
+.fs_col1 a:hover {
+  color: #c81623;
+}
+.fs_col1 span {
+  margin: 0 3px;
+  color: #333;
+}
+.JS_popCtn {
+  position: absolute;
+  top: 0;
+  left: 190px;
+  z-index: 2;
+  background-color: #fff;
+  border: lawngreen 2px solid;
+  width: 1000px;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  font-size: 12px;
+}
+.ate_partc {
+  width: 800px;
+  background-color: lawngreen;
+}
+.cate_part_col1 {
+  display: block;
+}
+.cate_channel {
+  margin: 0 5px;
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 0 8px;
+  height: 28px;
+  line-height: 28px;
+  width: fit-content;
+}
+.cate_channel i {
+  line-height: 28px;
+  display: inline-block;
+}
+/* 大轮播图 */
+.fs_col2 {
+  width: 590px;
+  height: 470px;
+  background-color: pink;
+  margin-left: 10px;
+  overflow: hidden;
+  position: relative;
+  font-size: 0;
+}
+.fs_col2_inner {
+  width: 4130px;
+  background-color: #333;
+  position: absolute;
+  left: -590px;
+}
+.fs_col2_inner a {
+  width: 590px;
+  height: 470px;
+  display: inline-block;
+}
+.fs_col2_inner img {
+  width: 590px;
+  height: 470px;
+}
+/* 小轮播图 */
+.fs_col3 {
+  width: 190px;
+  height: 470px;
+  background-color: fff;
+  margin-left: 10px;
+  position: relative;
+  overflow: hidden;
+  font-size: 0;
+}
+.fs_col3 a {
+  width: 190px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+.fs_col3 a img {
+  width: 190px;
+  height: 150px;
+}
+.fs_col3_inner {
+  position: absolute;
+  width: 950px;
+  height: 470px;
+  left: -190px;
+}
+.fs_col3_inner div {
+  width: 190px;
+  height: 470px;
+  display: inline-block;
+}
+.fs_col3 .btn_left,
+.fs_col3 .btn_right {
+  display: none;
+}
+/* 用户登录注册 */
+.fs_col4 {
+  width: 190px;
+  height: 470px;
+  background-color: #fff;
+  margin-left: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+.fs_col4 .user {
+  height: 87px;
+  width: 190px;
+  padding-top: 12px;
+  position: relative;
+}
+.fs_col4 .user img {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+.fs_col4 .user .user_text {
+  line-height: 20px;
+}
+.fs_col4 .user .user_text div {
+  height: 20px;
+}
+.fs_col4 .user .user_text p {
+  display: inline-block;
+}
+.fs_col4 .user .user_text p a,
+span {
+  color: #333;
+}
+.fs_col4 .user .user_text p:hover {
+  color: #c81623;
+}
+.user_profit {
+  width: 190px;
+  height: 25px;
+  float: none;
+  margin-top: 50px;
+  text-align: center;
+}
+.user_profit a {
+  width: 70px;
+  height: 25px;
+  display: inline-block;
+  background-color: aqua;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 12px;
+}
+.user_profit a:hover {
+  background: #e1251b !important;
+  color: #fff !important;
+}
+.user_profit a:first-child {
+  margin-right: 10px;
+  background: #e1251b;
+  color: #fff;
+}
+.user_profit a:last-child {
+  background-color: rgb(54, 54, 52);
+  color: #e5d790;
+}
+.fs_col4 .user::after {
+  width: 160px;
+  height: 2px;
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  background: linear-gradient(270deg, white, #eee, #eee, white);
+}
+.fs_col4 .news {
+  width: 160px;
+  height: 130px;
+  padding: 0 15px;
+  position: relative;
+}
+.news .hd {
+  padding-top: 6px;
+  height: 30px;
+  line-height: 30px;
+}
+.news .hd h5 {
+  font-size: 14px;
+  color: #333;
+}
+.news .hd i {
+  line-height: 30px;
+}
+.news_list li {
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  padding: 3px 0;
+}
+.news_list li a {
+  display: inline-block;
+  width: 160px;
+  overflow: hidden;
+  /* 文字超出内容使用省略号 */
+  text-overflow: ellipsis;
+  /* 文本不换行 */
+  white-space: nowrap;
+}
+.news_list li span {
+  display: inline-block;
+  width: 35px;
+  height: 16px;
+  background-color: rgba(225, 37, 27, 0.08);
+  text-align: center;
+  margin-right: 5px;
+}
+.fs_col4 .news::after {
+  width: 160px;
+  height: 1px;
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  background: linear-gradient(270deg, white, #eee, #eee, white);
+}
+.service {
+  padding: 12px 0;
+}
+.service ul li {
+  width: 63px;
+  height: 55px;
+}
+.service ul li i {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  position: relative;
+}
+.service ul li img {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.service ul li span {
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  color: #333;
+}
+/* 中间第一部分：轮播图区域  end */
+
+/* 中间第二部分 秒杀区域  start */
+.seckill {
+  height: 260px;
+  background-color: #fff;
+  color: #fff;
+  margin-top: 15px;
+}
+/* 左边部分 倒计时 */
+.seckill__inner {
+  background-color: skyblue;
+  width: 190px;
+  height: 260px;
+  background: url(../images/seckill_background.png);
+}
+.countdown-title {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 31px;
+}
+.countdown-desc {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 14px;
+  height: 26px;
+}
+.countdown-desc strong {
+  margin-right: 3px;
+  font-size: 18px;
+}
+.timmer {
+  width: 130px;
+  height: 30px;
+  display: inline-block;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.timmer span {
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  background-color: #333;
+  text-align: center;
+  margin: 0 5px;
+}
+.timer_after::after {
+  content: ":";
+  position: absolute;
+  margin: 0 10px;
+}
+/* 中间部分 滑动切换图片 */
+.slider_list {
+  width: 800px;
+  height: 260px;
+  overflow: hidden;
+  position: relative;
+}
+.slider_list_inner {
+  width: 4000px;
+  height: 260px;
+  position: relative;
+  left: -800px;
+}
+.slider_list a {
+  display: block;
+  width: 200px;
+  height: 260px;
+  text-align: center;
+  position: relative;
+}
+.slider_list a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  width: 1px;
+  height: 200px;
+  background: linear-gradient(180deg, white, #eeeeee, white);
+}
+.slider_list img {
+  width: 140px;
+  height: 140px;
+  margin-top: 30px;
+  vertical-align: bottom;
+}
+.slider_list h6 {
+  font-size: 12px;
+  color: #333;
+  font-weight: normal;
+  margin: 0;
+  padding: 10px 15px;
+  overflow: hidden;
+  /* 文字超出内容使用省略号 */
+  text-overflow: ellipsis;
+  /* 文本不换行 */
+  white-space: nowrap;
+}
+.slider_list i {
+  font-size: 12px;
+  font-style: normal;
+}
+.price-miaosha {
+  display: inline-block;
+  width: 92px;
+  height: 24px;
+  line-height: 24px;
+  background-color: #c81623;
+  color: #fff;
+}
+.price-miaosha span {
+  color: #fff;
+  font-weight: 700;
+}
+.price-origin {
+  display: inline-block;
+  line-height: 24px;
+  width: 68px;
+  height: 22px;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-left: -5px;
+  font-size: 12px;
+  color: #999;
+  box-sizing: content-box;
+  border-top: solid 1px #c81623;
+  border-bottom: solid 1px #c81623;
+  border-right: solid 1px#c81623;
+  text-decoration: line-through;
+  position: relative;
+}
+.price-origin span {
+  color: #999;
+}
+.price-origin::before {
+  content: "";
+  position: absolute;
+  background-color: #c81623;
+  left: -5px;
+  /* top: -1px; */
+  border-left: 5px solid #c81623;
+  border-right: 0px solid #fff;
+  border-bottom: 23.5px solid #fff;
+  border-top: 0 solid #fff;
+  margin-top: -1px;
+}
+/* 右边部分 小轮播图 */
+.seckill-brand {
+  width: 200px;
+  height: 260px;
+  background-color: plum;
+  position: relative;
+}
+.seckill-brand_inner {
+  width: 400px;
+  font-size: 0;
+  position: absolute;
+}
+.seckill-brand_inner .seckill-brand_inner_page {
+  width: 200px;
+  height: 260px;
+  background-color: #fff;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.seckill-brand_inner .seckill-brand_inner_page:last-child {
+  display: none;
+}
+.seckill-brand_inner_page a {
+  text-align: center;
+  width: 100%;
+  height: 150px;
+}
+.seckill-brand_inner_page img {
+  width: 120px;
+  height: 120px;
+  margin-top: 30px;
+}
+.item-info {
+  text-align: center;
+  height: 90px;
+  width: 180px;
+  margin: 10px 10px 0;
+}
+.item-info-title {
+  font-size: 14px;
+  color: #666;
+  margin-top: 12px;
+}
+
+.item-info-promo {
+  color: #333;
+  font-weight: 700;
+  font-size: 14px;
+
+  margin-top: 4px;
+}
+.item-info-action {
+  width: 82px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  font-size: 12px;
+  margin: 5px auto 0;
+  border-radius: 20px;
+  border: 1px solid #e1251b;
+  color: #e1251b;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.item-info-action:hover {
+  background-color: #e1251b;
+  color: #fff;
+}
+/* 中间第二部分 秒杀区域  end */
